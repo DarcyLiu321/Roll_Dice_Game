@@ -78,7 +78,7 @@ btnHold.addEventListener('click', function () {
     totalScore[activePlayer] = totalScore[activePlayer] + currentScore;  //add current score to total score and store into array
     document.getElementById(`score--${activePlayer}`).textContent = totalScore[`${activePlayer}`]; //display total score
 
-    if (totalScore[`${activePlayer}`] < 10) {
+    if (totalScore[`${activePlayer}`] < 100) {
       //switch to next player
       switchPlayer();
     } else {
